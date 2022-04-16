@@ -15,6 +15,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
@@ -132,14 +133,22 @@
             <section class="news">
                 <div class="container">
                     <div class="news__item">
-                        <div class="has__img">
+                        <div
+                            class="has__img"
+                            data-aos="fade-down-right"
+                            data-aos-duration="2000"
+                        >
                             <img
                                 src="img/img/product/instagram3.jpg"
                                 alt=""
                                 class="img-fluid"
                             />
                         </div>
-                        <div class="content">
+                        <div
+                            class="content"
+                            data-aos="fade-down-left"
+                            data-aos-duration="2000"
+                        >
                             <h3>Tiêu đề bài viết</h3>
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur
@@ -152,7 +161,11 @@
                             <button>Shop now</button>
                         </div>
                     </div>
-                    <div class="news__item">
+                    <div
+                        class="news__item"
+                        data-aos="flip-left"
+                        data-aos-duration="2000"
+                    >
                         <div class="has__img order">
                             <img
                                 src="img/img/product/instagram3.jpg"
@@ -184,5 +197,9 @@
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="slick-1.8.1/slick/slick.min.js"></script>
         <script src="js/custom.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
