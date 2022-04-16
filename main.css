@@ -151,7 +151,7 @@ nav {
     cursor: pointer;
 }
 
-.order-1 {
+.order {
     order: 1;
 }
 
@@ -160,4 +160,19 @@ footer {
     padding: 20px 0;
     text-align: center;
     color: #fff;
+}
+.slick-next {
+    right: 0;
+}
+@media screen and ((min-width: 740px) and (max-width:1023px)) {
+}
+@media screen and (max-width: 739px) {
+    .news__item {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 0;
+        padding: 0 20px;
+    }
+    .order {
+        order: -1;
+    }
 }
